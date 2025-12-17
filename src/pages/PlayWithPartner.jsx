@@ -46,8 +46,7 @@ const PlayWithPartner = () => {
                         <button
                             onClick={handleContinue}
                             className={`bg-[#2FAA17] rounded-lg w-[75%] py-4 cursor-pointer transition-opacity duration-[500ms] ease-in-out ${activeButton ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-                            >Continue
-                        </button>
+                        >Continue</button>
                     </div>
                 </div>
             </div>
