@@ -29,7 +29,7 @@ const Scan1 = () => {
       </div>
       <button
         onClick={() => navigate("/scan2")}
-        className="font-LG text-2xl text-white cursor-pointer bg-green-600 shadow-[inset_10px_10px_20px_rgba(0,0,0,0.25),inset_-10px_-10px_20px_rgba(0,0,0,0.25)] rounded-xl w-[80%] py-2"
+        className="font-LG text-2xl text-white cursor-pointer bg-green-600 active:scale-95 shadow-[inset_10px_10px_20px_rgba(0,0,0,0.25),inset_-10px_-10px_20px_rgba(0,0,0,0.25)] rounded-xl w-[80%] py-2"
       >Scan Code</button>
     </div>
   </div>

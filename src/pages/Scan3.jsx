@@ -17,10 +17,9 @@ const Scan3 = () => {
                 />
                 </button>
                 
-                {/* header ribbon */}
                 <img src={header} className="mb-16" />
 
-                {/* CARD */}
+                {/* main section container */}
                 <div className="flex flex-col w-[90%] mb-7 text-white rounded-3xl shadow-[0_6px_20px_rgba(0,0,0,0.45)]">
                     {/* GREEN TOP */}
                     <div className="flex flex-col items-center relative pt-16 pb-3 text-white bg-[#30AD17] rounded-t-3xl">
@@ -44,7 +43,7 @@ const Scan3 = () => {
                     </div>
                 </div>
                 <button
-                    className="font-LG text-2xl text-white cursor-pointer bg-green-600 shadow-[inset_10px_10px_20px_rgba(0,0,0,0.25),inset_-10px_-10px_20px_rgba(0,0,0,0.25)] rounded-xl w-[80%] py-2"
+                    className="font-LG text-2xl text-white cursor-pointer bg-green-600 active:scale-95 shadow-[inset_10px_10px_20px_rgba(0,0,0,0.25),inset_-10px_-10px_20px_rgba(0,0,0,0.25)] rounded-xl w-[80%] py-2"
                 >Invite</button>
             </div>
         </div>
