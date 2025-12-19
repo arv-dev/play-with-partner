@@ -5,12 +5,11 @@ import backBtn from "../assets/images/back-btn.png";
 import header from "../assets/images/header.png"
 
 const PlayWithPartner = () => {
-
-    const [activeButton, setActiveButton] = useState(null);
     const navigate = useNavigate();
 
+    // to see which page to go
+    const [activeButton, setActiveButton] = useState(null);
     const handleContinue = () => {
-
         if (activeButton === "generate") {
             navigate("/generate1");
         } else if (activeButton === "scan") {
