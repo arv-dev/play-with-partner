@@ -6,7 +6,7 @@ import profileLg from "../assets/images/profile-lg.png"
 const Scan3 = () => {
     const navigate = useNavigate();
     return (
-        <div className="min-h-screen flex justify-center p-7 bg-[#084A97]">
+        <div className="min-h-screen flex justify-center py-6 px-7 bg-[#084A97]">
             <div className="w-full max-w-[420px] flex flex-col items-center">
                 {/* back button */}
                 <button className="self-start pb-5">
@@ -17,10 +17,10 @@ const Scan3 = () => {
                 />
                 </button>
                 
-                <img src={header} className="mb-16" />
+                <img src={header} alt="header" />
 
                 {/* main section container */}
-                <div className="flex flex-col w-[90%] mb-7 text-white rounded-3xl shadow-[0_6px_20px_rgba(0,0,0,0.45)]">
+                <div className="flex flex-col w-[90%] mt-16 mb-7 text-white rounded-3xl shadow-[0_6px_20px_rgba(0,0,0,0.45)]">
                     {/* GREEN TOP */}
                     <div className="flex flex-col items-center relative pt-16 pb-3 text-white bg-[#30AD17] rounded-t-3xl">
                         <img
@@ -30,14 +30,14 @@ const Scan3 = () => {
                         <h2 className="font-LG text-xl">GERWIN NYAW</h2>
                     </div>
                     {/* BLUE BOTTOM */}
-                    <div className="min-h-72 text-center py-4 px-5 font-LG bg-[#004C99] rounded-b-3xl">
-                        <h2 className="mb-6 text-lg">Details</h2>
-                        <div className="flex justify-around pb-3 px-6 font-FD text-xs mb-4 border-b border-[#30AD17]">
-                            <p>LRN</p>
+                    <div className="min-h-72 py-4 px-5 font-LG bg-[#004C99] rounded-b-3xl">
+                        <h2 className="mb-6 text-lg text-center">Details</h2>
+                        <div className="flex pb-3 px-6 font-FD text-xs mb-4 border-b border-[#30AD17]">
+                            <p className="w-[30%]">LRN</p>
                             <p>105115 120415</p>    
                         </div>
-                        <div className="flex justify-around pb-3 px-6 font-FD text-xs mb-4 border-b border-[#30AD17]">
-                            <p>School</p>
+                        <div className="flex pb-3 px-6 font-FD text-xs mb-4 border-b border-[#30AD17]">
+                            <p className="w-[30%]">School</p>
                             <p>eme eme</p>
                         </div>
                     </div>

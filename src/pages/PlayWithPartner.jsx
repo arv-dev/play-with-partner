@@ -10,7 +10,6 @@ const PlayWithPartner = () => {
     const navigate = useNavigate();
 
     const handleContinue = () => {
-        if (!activeButton) return; // do nothing if no button is selected
 
         if (activeButton === "generate") {
             navigate("/generate1");
@@ -20,21 +19,21 @@ const PlayWithPartner = () => {
     };
 
     return (
-        <div className="min-h-screen flex justify-center p-6">
-            <div className="w-full max-w-[420px] flex flex-col items-center">
-                <button className="self-start pb-5">
-                    <img src={backBtn} className="active:brightness-75 active:scale-95" />
+        <div className="flex justify-center min-h-screen p-6">
+            <div className="flex flex-col items-center w-full max-w-[420px]">
+                <button className="self-start pb-5 cursor-pointer">
+                    <img src={backBtn} alt="Back Button" className="active:brightness-75 active:scale-95" />
                 </button>
-                <img src={header} className="mb-24" />
+                <img src={header} />
 
                 {/* main section */}
-                <div className="flex flex-col text-center items-center w-full gap-7">
+                <div className="flex flex-col text-center items-center w-full mt-24 gap-7">
                     <h2 className="font-LG text-white text-xl">Choose an invitation method for your partner</h2>
 
                     {/* button container */}
-                    <div className="flex flex-col text-sm items-center font-FD text-white w-full gap-3">
+                    <div className="flex flex-col items-center w-full gap-3 text-sm font-FD text-white">
                         <button
-                            className={`rounded-lg w-[75%] py-4 cursor-pointer ${ activeButton === "generate" ? "bg-[#002754] border border-white" : "bg-[#021934]"}`}
+                            className={`py-4 rounded-lg w-[75%] cursor-pointer ${ activeButton === "generate" ? "bg-[#002754] border border-white" : "bg-[#021934]"}`}
                             onClick={() => {setActiveButton(prev => (prev === "generate" ? null : "generate"))}}
                         >Generate Code to Invite</button>
                         <p>or</p>
